@@ -1,0 +1,81 @@
+// body {
+//   background-color: #757575;
+//   color: $primary-text-color;
+//   background-color: $primary-background-color;
+//   overflow-x: hidden;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// .title {
+//   color: $title-text-color;
+//   font-family: $main-font;
+//   letter-spacing: 0.03;
+//   text-align: center;
+
+//   @media screen and (max-width: 1199px) {
+//     margin-bottom: 30px;
+//     font-size: 28px;
+//     line-height: 1.17;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//     font-size: 36px;
+//     line-height: 1.16;
+//   }
+// }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  //   @media screen and (min-width: 480px) and (max-width: 767px) {
+  //     max-width: 450px;
+  //   }
+
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //     max-width: 768px;
+  //   }
+
+  @media screen and (min-width: 1500px) {
+    max-width: 1500px;
+  }
+}
+
+// .section {
+//   @media screen and (max-width: 1199px) {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
