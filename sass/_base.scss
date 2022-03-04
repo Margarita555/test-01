@@ -33,6 +33,7 @@ img {
 }
 
 .title {
+  position: relative;
   margin-bottom: 80px;
   font-family: Gotham Pro;
   // font-style: normal;
@@ -89,4 +90,21 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
+
+.button {
+  padding: 20px 45px;
+
+  font-family: Gotham Pro;
+  // font-style: normal;
+  // font-weight: normal;
+  font-size: 14px;
+  // line-height: 115.7%;
+  /* or 16px */
+  color: $secondary-text-color;
+  background-color: transparent;
+  border: 1px solid $secondary-text-color;
+
+  text-transform: uppercase;
+  cursor: pointer;
 }

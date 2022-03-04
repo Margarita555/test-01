@@ -26,13 +26,14 @@ img {
 }
 
 .title {
+  position: relative;
   margin-bottom: 80px;
   font-family: Gotham Pro;
   font-size: 20px;
   /* or 24px */
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #40474E;
+  color: #40474e;
 }
 
 .container {
@@ -52,6 +53,18 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
+
+.button {
+  padding: 20px 45px;
+  font-family: Gotham Pro;
+  font-size: 14px;
+  /* or 16px */
+  color: #6b97bb;
+  background-color: transparent;
+  border: 1px solid #6b97bb;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header__container {
@@ -85,7 +98,7 @@ img {
   font-size: 16px;
   /* identical to box height, or 19px */
   text-transform: uppercase;
-  color: #40474E;
+  color: #40474e;
 }
 
 .site-nav__item--accent {
@@ -131,13 +144,133 @@ img {
   color: #ffffff;
 }
 
+.projects__container {
+  padding-bottom: 433px;
+}
+
 .projects__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.projects__button {
-  background-color: red;
+.projects__title::after {
+  position: absolute;
+  left: 224px;
+  bottom: 10px;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #8d9aa5;
+  border-radius: 2px;
+}
+
+.projects__image {
+  position: absolute;
+  right: 627px;
+  max-width: 1070px;
+}
+
+.projects__box {
+  position: relative;
+  max-width: 540px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.projects__box--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects__button--arrow {
+  padding: 26px 13px;
+  border: 1px solid #40474e;
+  background-color: #ffffff;
+}
+
+.projects__button--left {
+  margin-right: 10px;
+}
+
+.projects__subtitle {
+  margin-top: 85px;
+  margin-bottom: 40px;
+  font-family: Gotham Pro;
+  font-size: 44px;
+  /* or 57px */
+  color: #40474e;
+}
+
+.projects__text {
+  font-family: Gotham Pro;
+  font-weight: 300;
+  font-size: 18px;
+  /* or 25px */
+  color: #40474e;
+}
+
+.projects__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.projects__gallery {
+  position: absolute;
+  left: -180px;
+  bottom: -345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects__gallery--image:not(last-child) {
+  margin-right: 40px;
+}
+
+.blog {
+  background-color: #e5e5e5;
+}
+
+.blog__title::after {
+  position: absolute;
+  left: 319px;
+  bottom: 10px;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #8d9aa5;
+  border-radius: 2px;
+}
+
+.instagram__title {
+  width: 410px;
+  margin: 0 auto;
+}
+
+.instagram__title::after, .instagram__title::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #8d9aa5;
+  border-radius: 2px;
+}
+
+.instagram__title::after {
+  left: 434px;
+  bottom: 10px;
+}
+
+.instagram__title::before {
+  left: -224px;
+  bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

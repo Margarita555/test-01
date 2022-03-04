@@ -1,0 +1,27 @@
+.instagram__title {
+  //   text-align: center;
+  //   display: inline-block;
+  width: 410px;
+  margin: 0 auto;
+
+  &::after,
+  &::before {
+    position: absolute;
+
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: $secondary-border-color;
+    border-radius: 2px;
+  }
+  &::after {
+    left: 434px;
+    bottom: 10px;
+  }
+
+  &::before {
+    left: -224px;
+    bottom: 10px;
+  }
+}

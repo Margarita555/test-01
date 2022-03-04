@@ -1,0 +1,23 @@
+.blog {
+  background-color: $secondary-background-color;
+  //   &__wrapper {
+  //     display: flex;
+  //   }
+
+  &__title::after {
+    position: absolute;
+    left: 319px;
+    bottom: 10px;
+
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: $secondary-border-color;
+    border-radius: 2px;
+  }
+
+  //   &__button {
+  //     background-color: red;
+  //   }
+}
