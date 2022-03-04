@@ -25,6 +25,16 @@ img {
   height: auto;
 }
 
+.title {
+  margin-bottom: 80px;
+  font-family: Gotham Pro;
+  font-size: 20px;
+  /* or 24px */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #40474E;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -37,6 +47,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,9 +61,15 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__button {
+  padding: 13px 35px 11px 35px;
+  background-color: #ffffff;
+  border: 1px solid #aa182c;
   cursor: pointer;
 }
 
@@ -54,7 +77,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #757575;
+  background-color: #ee8181;
 }
 
 .site-nav__link {
@@ -62,10 +85,59 @@ img {
   font-size: 16px;
   /* identical to box height, or 19px */
   text-transform: uppercase;
-  color: #40474e;
+  color: #40474E;
+}
+
+.site-nav__item--accent {
+  color: #aa182c;
 }
 
 .site-nav__item:not(:last-child) {
   margin-right: 42px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.hero__image {
+  padding-top: 440px;
+  padding-bottom: 186px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 71, 78, 0.45)), to(rgba(64, 71, 78, 0.45))), url(../../images/hero-image.jpg);
+  background-image: linear-gradient(rgba(64, 71, 78, 0.45), rgba(64, 71, 78, 0.45)), url(../../images/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  font-family: Gotham Pro;
+  font-size: 86px;
+  /* or 86px */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  font-family: Gotham Pro;
+  font-size: 30px;
+  /* or 42px */
+  color: #ffffff;
+}
+
+.projects__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects__button {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,15 +1,21 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__button {
+  padding: 13px 35px 11px 35px;
+  background-color: $primary-background-color;
+  border: 1px solid $primary-border-color;
   cursor: pointer;
 }
 
 .site-nav {
   display: flex;
-  background-color: #757575;
+  // align-items: center;
+  // vertical-align: center;
+  background-color: #ee8181;
   //   margin-left: 93px;
 
   &__link {
@@ -22,14 +28,18 @@
 
     text-transform: uppercase;
 
-    color: #40474e;
-    //   display: block;
+    color: $primary-text-color;
+    // display: block;
     //   padding-top: 30px;
     //   padding-bottom: 30px;
 
     //   @include fonts($main-font, 14px, 1.14, 0.02em);
     //   color: $title-text-color;
     //   font-weight: 500;
+  }
+
+  &__item--accent {
+    color: $primary-border-color;
   }
 
   //   &__link--active {
@@ -54,11 +64,21 @@
   //     color: $accent-color;
   //   }
 
-  //   &__item {
-  //     position: relative;
-  //   }
+  // &__item {
+  //   display: block;
+  // }
 
   &__item:not(:last-child) {
     margin-right: 42px;
+  }
+}
+
+.service {
+  display: flex;
+  // vertical-align: center;
+  // align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 13px;
   }
 }

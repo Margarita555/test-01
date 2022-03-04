@@ -1,0 +1,35 @@
+.hero__image {
+  padding-top: 440px;
+  padding-bottom: 186px;
+  background-image: linear-gradient(
+      $hero-background-color,
+      $hero-background-color
+    ),
+    url(../../images/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  //   margin-top: 440px;
+  margin-bottom: 28px;
+  font-family: Gotham Pro;
+  // font-style: normal;
+  // font-weight: normal;
+  font-size: 86px;
+  // line-height: 100%;
+  /* or 86px */
+  color: $primary-background-color;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  //   margin-bottom: 186px;
+  font-family: Gotham Pro;
+  // font-style: normal;
+  // font-weight: normal;
+  font-size: 30px;
+  // line-height: 140%;
+  /* or 42px */
+  color: $primary-background-color;
+}
