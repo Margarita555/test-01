@@ -2,8 +2,6 @@
   position: absolute;
   right: 67px;
   top: 85px;
-  //   display: flex;
-  //   flex-direction: column;
   background-color: $primary-background-color;
   padding: 76px 140px 100px;
 
@@ -50,18 +48,12 @@
     // line-height: 140%;
     /* or 22px */
     color: $border-color;
-
-    // &::placeholder {
-    //   padding: 13px 20px;
-    // }
   }
 
   &__button {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    // margin-left: 0;
-    // margin-right: 0;
     padding: 20px 22px 17px 30px;
     font-family: $main-font;
     font-size: 14px;
@@ -83,8 +75,3 @@
     resize: none;
   }
 }
-
-// .input {
-//   display: block;
-//   width: 100%;
-// }
