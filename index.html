@@ -19,7 +19,7 @@
     <header class="header">
       <div class="container header__container">
         <svg class="icon" aria-label="Menu" width="96" height="86">
-          <use class="logo header__logo" href="./images/icons.svg#Logo"></use>
+          <use class="logo header__logo" href="./images/icons.svg#logo"></use>
         </svg>
 
         <button type="button" class="header__button">В магазин</button>
@@ -54,27 +54,28 @@
         <ul class="list service">
           <li class="service__item">
             <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#Frame-3"></use>
+              <use href="./images/icons.svg#frame-3"></use>
             </svg>
           </li>
           <li class="service__item">
             <svg class="icon" width="22" height="22">
-              <use href="./images/icons.svg#Vector"></use>
+              <use href="./images/icons.svg#vector"></use>
             </svg>
           </li>
           <li class="service__item">
             <svg class="icon" width="22" height="20">
-              <use href="./images/icons.svg#Frame-4"></use>
+              <use href="./images/icons.svg#frame-4"></use>
             </svg>
           </li>
           <li class="service__item">
             <svg class="icon" width="19" height="20">
-              <use href="./images/icons.svg#Union"></use>
+              <use href="./images/icons.svg#union"></use>
             </svg>
           </li>
         </ul>
       </div>
     </header>
+
     <section class="hero">
       <div class="hero__image">
         <div class="container hero__container">
@@ -85,11 +86,32 @@
           <p class="hero__text">
             Лучшие европейские коллекции <br />керамики и керамогранита
           </p>
-          <!-- 
-          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button> -->
+          <ul class="social list">
+            <li class="social__item">
+              <svg class="icon" width="27" height="27">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+              <li class="social__item">
+              <svg class="icon" width="27" height="27">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg class="icon" width="32" height="32">
+                <use href="./images/icons.svg#youtube"></use>
+              </svg>
+            </li>
+            <li class="social__item">
+              <svg class="icon" width="27" height="27">
+                <use href="./images/icons.svg#pinterest"></use>
+              </svg>
+            </li>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+
     <section class="projects section">
       <div class="container projects__container">
         <h1 class="projects__title title">Наши проекты</h1>
@@ -109,9 +131,15 @@
                   type="button"
                   class="projects__button--arrow projects__button--left"
                 >
-                  С
+                  <svg class="icon" width="26" height="17">
+                    <use href="./images/icons.svg#arrow-left"></use>
+                  </svg>
                 </button>
-                <button type="button" class="projects__button--arrow">С</button>
+                <button type="button" class="projects__button--arrow">
+                  <svg class="icon" width="26" height="17">
+                    <use href="./images/icons.svg#arrow-right"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <h3 class="projects__subtitle">Сеть фитнес-центров Start&Finish</h3>
@@ -146,6 +174,7 @@
         </div>
       </div>
     </section>
+
     <section class="blog section">
       <div class="container blog__container">
         <div class="blog__wrapper">
@@ -156,13 +185,61 @@
         </div>
       </div>
     </section>
+
     <section class="instagram section">
-      <div class="container instagram__container">
+      <div class="instagram__container">
         <div class="instagram__wrapper">
           <h2 class="instagram__title title">Следите за нами в instagram</h2>
-          <button type="button" class="instagram__button">Подписаться</button>
+          <ul class="instagram__gallery list">
+            <li class="instagram__item">
+               <img src="./images/instagram-images/image-sofa.jpg" alt="sofa image">
+            </li>
+            <li class="instagram__item">
+               <img src="./images/instagram-images/tile.jpg" alt="tile image">
+            </li>
+            <li class="instagram__item">
+               <img src="./images/instagram-images/living-room.jpg" alt="living-room image">
+            </li>
+            <li class="instagram__item">
+               <img src="./images/instagram-images/tile-patterns.jpg" alt="tile patterns">
+            </li>
+            <li class="instagram__item">
+               <img src="./images/instagram-images/floor.jpg" alt="floor image">
+            </li>
+            <li class="instagram__item instagram__item--last">
+                <a href="#" class="instagram__link--icon link">
+                  <svg class="icon" width="27" height="27">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+               </a>
+             
+                <a href="#" class="instagram__link link">@ceramica</a>
+               <button type="button" class="instagram__button">Подписаться</button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+
+        <section class="form__section section">
+      <div class="form__container container">
+        <img src="./images/form-image.jpg" alt="sink image">
+        <form class="form">
+           <h2 class="form__title">Возникли вопросы?</h2>
+           <p class="form__text">Оставьте свой номер, и наши менеджеры свяжутся с Вами</p>
+           <label class="input">
+           <input class="form__input" type="text" name="name" id="name" placeholder="*Имя"></label>
+           <input class="form__input" type="tel" name="tel" id="tel" placeholder="*Телефон">
+           <input class="form__input" type="email" name="email" id="email" placeholder="*Email">
+           <textarea class="form__input form__message" name="message" id="message" rows="5" placeholder="*Сообщение"></textarea>
+           <button type="submit" class="form__button">Отправить
+             <svg class="icon form__arrow" width="26" height="17">
+                    <use href="./images/icons.svg#arrow-right"></use>
+                  </svg>
+           </button>
+        </form>
+      </div>
+    </section>
+
   </body>
 </html>

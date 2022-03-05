@@ -1,0 +1,90 @@
+.form {
+  position: absolute;
+  right: 67px;
+  top: 85px;
+  //   display: flex;
+  //   flex-direction: column;
+  background-color: $primary-background-color;
+  padding: 76px 140px 100px;
+
+  &__section {
+    background-color: $background-color;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: $main-font;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    text-align: center;
+    color: #40474e;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: $main-font;
+
+    font-weight: 300;
+    font-size: 18px;
+    // line-height: 140%;
+    /* or 25px */
+    color: $primary-text-color;
+  }
+
+  &__input {
+    // box-sizing: border-box;
+    padding: 13px 20px;
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    border: 1px solid $instagram-background-color;
+
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 16px;
+    // line-height: 140%;
+    /* or 22px */
+    color: $border-color;
+
+    // &::placeholder {
+    //   padding: 13px 20px;
+    // }
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    // margin-left: 0;
+    // margin-right: 0;
+    padding: 20px 22px 17px 30px;
+    font-family: $main-font;
+    font-size: 14px;
+    // line-height: 121.2%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $primary-background-color;
+    background-color: $secondary-text-color;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    fill: $primary-background-color;
+  }
+
+  &__message {
+    resize: none;
+  }
+}
+
+// .input {
+//   display: block;
+//   width: 100%;
+// }

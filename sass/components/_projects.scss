@@ -23,7 +23,6 @@
 
   &__image {
     position: absolute;
-    // left: ;
     right: 627px;
     max-width: 1070px;
   }
@@ -41,8 +40,8 @@
   }
 
   &__button--arrow {
-    padding: 26px 13px;
-    border: 1px solid $primary-text-color;
+    padding: 20px 15px 18px 15px;
+    border: 1px solid $border-color;
     background-color: $primary-background-color;
   }
 
@@ -50,10 +49,14 @@
     margin-right: 10px;
   }
 
+  &__button--right {
+    fill: $primary-border-color;
+  }
+
   &__subtitle {
     margin-top: 85px;
     margin-bottom: 40px;
-    font-family: Gotham Pro;
+    font-family: $main-font;
     // font-style: normal;
     // font-weight: normal;
     font-size: 44px;
@@ -64,7 +67,7 @@
   }
 
   &__text {
-    font-family: Gotham Pro;
+    font-family: $main-font;
     // font-style: normal;
     font-weight: 300;
     font-size: 18px;

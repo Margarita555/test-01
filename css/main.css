@@ -56,7 +56,7 @@ img {
 }
 
 .button {
-  padding: 20px 45px;
+  padding: 20px 45px 18px 45px;
   font-family: Gotham Pro;
   font-size: 14px;
   /* or 16px */
@@ -94,7 +94,7 @@ img {
 }
 
 .site-nav__link {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans serif;
   font-size: 16px;
   /* identical to box height, or 19px */
   text-transform: uppercase;
@@ -119,18 +119,23 @@ img {
   margin-right: 13px;
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__image {
-  padding-top: 440px;
+  padding-top: 385px;
   padding-bottom: 186px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 71, 78, 0.45)), to(rgba(64, 71, 78, 0.45))), url(../../images/hero-image.jpg);
-  background-image: linear-gradient(rgba(64, 71, 78, 0.45), rgba(64, 71, 78, 0.45)), url(../../images/hero-image.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 8, 0.45)), to(rgba(5, 7, 8, 0.45))), url(../../images/hero-image.jpg);
+  background-image: linear-gradient(rgba(5, 7, 8, 0.45), rgba(5, 7, 8, 0.45)), url(../../images/hero-image.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .hero__title {
+  padding-top: 65px;
   margin-bottom: 28px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans serif;
   font-size: 86px;
   /* or 86px */
   color: #ffffff;
@@ -138,10 +143,27 @@ img {
 }
 
 .hero__text {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans serif;
   font-size: 30px;
   /* or 42px */
   color: #ffffff;
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .projects__container {
@@ -190,8 +212,8 @@ img {
 }
 
 .projects__button--arrow {
-  padding: 26px 13px;
-  border: 1px solid #40474e;
+  padding: 20px 15px 18px 15px;
+  border: 1px solid #98a4ae;
   background-color: #ffffff;
 }
 
@@ -199,17 +221,21 @@ img {
   margin-right: 10px;
 }
 
+.projects__button--right {
+  fill: #aa182c;
+}
+
 .projects__subtitle {
   margin-top: 85px;
   margin-bottom: 40px;
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans serif;
   font-size: 44px;
   /* or 57px */
   color: #40474e;
 }
 
 .projects__text {
-  font-family: Gotham Pro;
+  font-family: "Gotham Pro", sans serif;
   font-weight: 300;
   font-size: 18px;
   /* or 25px */
@@ -249,9 +275,84 @@ img {
   border-radius: 2px;
 }
 
+.instagram {
+  background-color: #cfdae3;
+}
+
+.instagram__container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1500px) {
+  .instagram__container {
+    max-width: 880px;
+  }
+}
+
+.instagram__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.instagram__link--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #40474e;
+}
+
+.instagram__item--last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+  background-color: #ffffff;
+}
+
+.instagram__link {
+  margin-top: 15px;
+  margin-bottom: 18px;
+  font-family: "Gotham Pro", sans serif;
+  font-size: 24px;
+  /* identical to box height, or 29px */
+  color: #40474e;
+}
+
+.instagram__button {
+  padding: 15px 32px 13px;
+  background-color: #6b97bb;
+  border: none;
+  font-family: "Gotham Pro", sans serif;
+  font-size: 14px;
+  /* or 16px */
+  text-transform: uppercase;
+  color: #f9f9fa;
+  cursor: pointer;
+}
+
 .instagram__title {
   width: 410px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .instagram__title::after, .instagram__title::before {
@@ -265,12 +366,88 @@ img {
 }
 
 .instagram__title::after {
-  left: 434px;
+  left: 420px;
   bottom: 10px;
 }
 
 .instagram__title::before {
   left: -224px;
   bottom: 10px;
+}
+
+.form {
+  position: absolute;
+  right: 67px;
+  top: 85px;
+  background-color: #ffffff;
+  padding: 76px 140px 100px;
+}
+
+.form__section {
+  background-color: #e5e5e5;
+}
+
+.form__container {
+  position: relative;
+}
+
+.form__title {
+  margin-bottom: 16px;
+  font-family: "Gotham Pro", sans serif;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  text-align: center;
+  color: #40474e;
+}
+
+.form__text {
+  margin-bottom: 30px;
+  font-family: "Gotham Pro", sans serif;
+  font-weight: 300;
+  font-size: 18px;
+  /* or 25px */
+  color: #40474e;
+}
+
+.form__input {
+  padding: 13px 20px;
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  border: 1px solid #cfdae3;
+  font-family: "Gotham Pro", sans serif;
+  font-weight: 300;
+  font-size: 16px;
+  /* or 22px */
+  color: #98a4ae;
+}
+
+.form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 22px 17px 30px;
+  font-family: "Gotham Pro", sans serif;
+  font-size: 14px;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #6b97bb;
+  border: none;
+  cursor: pointer;
+}
+
+.form__arrow {
+  fill: #ffffff;
+}
+
+.form__message {
+  resize: none;
 }
 /*# sourceMappingURL=main.css.map */
