@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans serif;
+}
+
 h1,
 h2,
 h3,
@@ -94,7 +98,7 @@ img {
 }
 
 .site-nav__link {
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 16px;
   /* identical to box height, or 19px */
   text-transform: uppercase;
@@ -135,7 +139,7 @@ img {
 .hero__title {
   padding-top: 65px;
   margin-bottom: 28px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 86px;
   /* or 86px */
   color: #ffffff;
@@ -143,7 +147,7 @@ img {
 }
 
 .hero__text {
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 30px;
   /* or 42px */
   color: #ffffff;
@@ -228,14 +232,14 @@ img {
 .projects__subtitle {
   margin-top: 85px;
   margin-bottom: 40px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 44px;
   /* or 57px */
   color: #40474e;
 }
 
 .projects__text {
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-weight: 300;
   font-size: 18px;
   /* or 25px */
@@ -331,7 +335,7 @@ img {
 .instagram__link {
   margin-top: 15px;
   margin-bottom: 18px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 24px;
   /* identical to box height, or 29px */
   color: #40474e;
@@ -341,7 +345,7 @@ img {
   padding: 15px 32px 13px;
   background-color: #6b97bb;
   border: none;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 14px;
   /* or 16px */
   text-transform: uppercase;
@@ -393,7 +397,7 @@ img {
 
 .form__title {
   margin-bottom: 16px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 44px;
   line-height: 130%;
   /* or 57px */
@@ -403,7 +407,7 @@ img {
 
 .form__text {
   margin-bottom: 30px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-weight: 300;
   font-size: 18px;
   /* or 25px */
@@ -416,7 +420,7 @@ img {
   display: block;
   width: 100%;
   border: 1px solid #cfdae3;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-weight: 300;
   font-size: 16px;
   /* or 22px */
@@ -432,7 +436,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 22px 17px 30px;
-  font-family: "Gotham Pro", sans serif;
+  font-family: "Roboto", sans serif;
   font-size: 14px;
   /* identical to box height, or 17px */
   letter-spacing: 0.05em;
@@ -449,5 +453,17 @@ img {
 
 .form__message {
   resize: none;
+}
+
+.footer {
+  background-color: #6A737A;
+}
+
+.footer__container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

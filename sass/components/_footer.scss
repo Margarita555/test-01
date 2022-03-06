@@ -1,0 +1,9 @@
+.footer {
+  background-color: $footer-background-color;
+
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+  }
+}
