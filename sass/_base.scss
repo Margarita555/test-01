@@ -97,17 +97,32 @@ img {
 
 .button {
   padding: 20px 45px 18px 45px;
-
   font-family: Gotham Pro;
-  // font-style: normal;
-  // font-weight: normal;
   font-size: 14px;
   // line-height: 115.7%;
   /* or 16px */
   color: $secondary-text-color;
   background-color: transparent;
   border: 1px solid $secondary-text-color;
-
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.icon-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: $main-font;
+  font-size: 14px;
+  // line-height: 121.2%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $primary-background-color;
+  cursor: pointer;
+}
+.icon-white {
+  fill: $primary-background-color;
+}
+
+

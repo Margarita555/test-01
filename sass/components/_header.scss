@@ -7,66 +7,24 @@
 .header__button {
   padding: 13px 35px 11px 35px;
   background-color: $primary-background-color;
-  border: 1px solid $primary-border-color;
+  border: 1px solid $accent-color;
   cursor: pointer;
 }
 
 .site-nav {
   display: flex;
-  // align-items: center;
-  // vertical-align: center;
-  background-color: #ee8181;
-  //   margin-left: 93px;
 
   &__link {
     font-family: $main-font;
-    // font-style: normal;
-    // font-weight: normal;
     font-size: 16px;
-    // line-height: 115.7%;
-    /* identical to box height, or 19px */
-
+    line-height: 1.6;
     text-transform: uppercase;
-
     color: $primary-text-color;
-    // display: block;
-    //   padding-top: 30px;
-    //   padding-bottom: 30px;
-
-    //   @include fonts($main-font, 14px, 1.14, 0.02em);
-    //   color: $title-text-color;
-    //   font-weight: 500;
   }
 
   &__item--accent {
-    color: $primary-border-color;
+    color: $accent-color;
   }
-
-  //   &__link--active {
-  //     color: $accent-color;
-  //   }
-
-  //   &__link--active::after {
-  //     position: absolute;
-  //     left: 0;
-  //     bottom: -1px;
-
-  //     content: "";
-  //     display: block;
-  //     width: 100%;
-  //     height: 4px;
-  //     background-color: $accent-color;
-  //     border-radius: 2px;
-  //   }
-
-  //   &__link:hover,
-  //   &__link:focus {
-  //     color: $accent-color;
-  //   }
-
-  // &__item {
-  //   display: block;
-  // }
 
   &__item:not(:last-child) {
     margin-right: 42px;
@@ -75,10 +33,73 @@
 
 .service {
   display: flex;
-  // vertical-align: center;
-  // align-items: center;
+  justify-content: space-between;
 
   &__item:not(:last-child) {
     margin-right: 13px;
   }
+
+  &__icon {
+    fill: $primary-text-color;
+  }
+
+  &__item--heart {
+    position: relative;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: $accent-color;
+  }
+}
+
+.favourite {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  display: block;
+  width: 12px;
+  height: 13px;
+  background-color: $accent-color;
+  color: $primary-background-color;
+  transform: rotate(16deg);
+  text-align: center;
+  font-size: 12px;
+}
+
+.select-css {
+  display: block;
+  font-size: 16px;
+  border: none;
+  font-family: $main-font;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 10px;
+
+  background-image: url(../../images/arrow-down.png);
+  background-repeat: no-repeat, repeat;
+  background-position: right -1px top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+// .select-css:hover,
+// .select-css:focus {
+//   outline: none;
+//   background-color: $primary-background-color;
+// }
+
+// .select-css option {
+//   outline: none;
+//   background-color: $primary-background-color;
+// }
+
+.select-css option:hover,
+.select-css option:focus {
+  outline: none;
+  background-color: red;
+  // background-color: $primary-background-color;
 }

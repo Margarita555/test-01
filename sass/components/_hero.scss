@@ -20,8 +20,7 @@
     margin-bottom: 28px;
     font-family: $main-font;
     font-size: 86px;
-    // line-height: 100%;
-    /* or 86px */
+    line-height: 1;
     color: $primary-background-color;
     text-transform: uppercase;
   }
@@ -29,8 +28,7 @@
   &__text {
     font-family: $main-font;
     font-size: 30px;
-    // line-height: 140%;
-    /* or 42px */
+    line-height: 1.4;
     color: $primary-background-color;
   }
 }
