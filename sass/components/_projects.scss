@@ -8,6 +8,10 @@
     display: flex;
   }
 
+  &__title {
+    margin-bottom: 80px;
+  }
+
   &__title::after {
     position: absolute;
     left: 224px;

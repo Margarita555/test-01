@@ -22,6 +22,10 @@
     color: $primary-text-color;
   }
 
+  &__link:hover {
+    color: $accent-color;
+  }
+
   &__item--accent {
     color: $accent-color;
   }
@@ -62,44 +66,46 @@
   height: 13px;
   background-color: $accent-color;
   color: $primary-background-color;
-  transform: rotate(16deg);
+  transform: rotate(15deg);
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .select-css {
   display: block;
-  font-size: 16px;
   border: none;
-  font-family: $main-font;
-  line-height: 1.6;
-  text-transform: uppercase;
-  color: $primary-text-color;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   padding-right: 10px;
 
-  background-image: url(../../images/arrow-down.png);
+  background-image: url(../../images/arrow-drop-down.svg);
   background-repeat: no-repeat, repeat;
   background-position: right -1px top 50%, 0 0;
-  background-size: 0.65em auto, 100%;
+  background-size: 0.95em auto, 100%;
+  font-size: 16px;
+  // font-weight: 600;
+  font-family: $main-font;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: $primary-text-color;
 }
 
-// .select-css:hover,
-// .select-css:focus {
-//   outline: none;
-//   background-color: $primary-background-color;
-// }
+.select-css:hover,
+.select-css:focus {
+  outline: none;
+}
 
 // .select-css option {
-//   outline: none;
-//   background-color: $primary-background-color;
+//   font-weight: 600;
 // }
+.select-css option:checked {
+  display: none;
+}
 
 .select-css option:hover,
 .select-css option:focus {
-  outline: none;
+  // outline: none;
   background-color: red;
   // background-color: $primary-background-color;
 }

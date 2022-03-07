@@ -37,34 +37,22 @@ img {
 
 .title {
   position: relative;
-  margin-bottom: 80px;
-  font-family: Gotham Pro;
-  // font-style: normal;
-  // font-weight: normal;
+  // margin-bottom: 80px;
+  font-family: $main-font;
   font-size: 20px;
-  // line-height: 121.2%;
-  /* or 24px */
-
+  line-height: 1.21;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: $primary-text-color;
-  // font-family: $main-font;
-  // letter-spacing: 0.03;
-  // text-align: center;
 
   // @media screen and (max-width: 1199px) {
-  //   margin-bottom: 30px;
-  //   font-size: 28px;
-  //   line-height: 1.17;
-}
 
-//   @media screen and (min-width: 1200px) {
-//     margin-bottom: 50px;
-//     font-size: 36px;
-//     line-height: 1.16;
-//   }
-// }
+  // }
+
+  //   @media screen and (min-width: 1200px) {
+
+  //   }
+}
 
 .container {
   padding-left: 15px;
@@ -99,8 +87,7 @@ img {
   padding: 20px 45px 18px 45px;
   font-family: Gotham Pro;
   font-size: 14px;
-  // line-height: 115.7%;
-  /* or 16px */
+  line-height: 1.15;
   color: $secondary-text-color;
   background-color: transparent;
   border: 1px solid $secondary-text-color;
@@ -124,5 +111,3 @@ img {
 .icon-white {
   fill: $primary-background-color;
 }
-
-
